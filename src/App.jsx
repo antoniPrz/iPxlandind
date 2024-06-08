@@ -1,4 +1,56 @@
 import  { useState, useEffect } from 'react';
+import ProductCard from './components/ProductCard';
+
+const products = [
+  {
+    image: 'https://example.com/macbook.jpg',
+    title: 'MacBook Pro A1278 13" i5 4GB RAM',
+    price: '$239.990',
+    tag: 'CYBER WEEK'
+  },
+  {
+    image: 'https://example.com/iphone7.jpg',
+    title: 'iPhone 7',
+    price: '$139.990',
+    tag: 'CYBER WEEK'
+  },
+  {
+    image: 'https://example.com/iphonexr.jpg',
+    title: 'iPhone XR',
+    price: '$229.990',
+    tag: 'CYBER WEEK'
+  },
+  {
+    image: 'https://example.com/ps4.jpg',
+    title: 'Playstation 4 - 500GB con control',
+    price: '$169.990',
+    tag: 'CYBER WEEK'
+  },
+  {
+    image: 'https://example.com/iphonex.jpg',
+    title: 'iPhone X',
+    price: '$229.990',
+    tag: 'CYBER WEEK'
+  },
+  {
+    image: 'https://example.com/iphone8.jpg',
+    title: 'iPhone 8',
+    price: '$159.990',
+    tag: 'CYBER WEEK'
+  },
+  {
+    image: 'https://example.com/iphone13promax.jpg',
+    title: 'iPhone 13 Pro Max',
+    price: '$799.990',
+    tag: 'CYBER WEEK'
+  },
+  {
+    image: 'https://example.com/applewatch.jpg',
+    title: 'Apple Watch Serie 6',
+    price: '$249.990',
+    tag: 'CYBER WEEK'
+  },
+];
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -38,8 +90,16 @@ const App = () => {
         </section>
         <section className="products-section mt-8">
           <h2 className="text-2xl font-bold mb-4 text-primary-purple dark:text-dark-text">Nuestros Productos</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {/* Aquí van los productos */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {products.map((product, index) => (
+              <ProductCard 
+                key={index} 
+                image={product.image} 
+                title={product.title} 
+                price={product.price} 
+                tag={product.tag} 
+              />
+            ))}
           </div>
         </section>
         <section className="offers-section mt-8">
