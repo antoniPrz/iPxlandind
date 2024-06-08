@@ -1,51 +1,59 @@
-import  { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import ProductCard from './components/ProductCard';
+import macbookImage from './assets/macbook.jpg';
+import iphone7Image from './assets/iphone7.jpg';
+import iphonexrImage from './assets/iphonexr.jpg';
+import ps4Image from './assets/ps4.jpg';
+import iphonexImage from './assets/iphonex.jpg';
+import iphone8Image from './assets/iphone8.jpg';
+import iphone13proMaxImage from './assets/iphone13promax.jpg';
+import appleWatchImage from './assets/applewatch.jpg';
 
 const products = [
   {
-    image: 'https://example.com/macbook.jpg',
+    image: macbookImage,
     title: 'MacBook Pro A1278 13" i5 4GB RAM',
     price: '$239.990',
     tag: 'CYBER WEEK'
   },
   {
-    image: 'https://example.com/iphone7.jpg',
+    image: iphone7Image,
     title: 'iPhone 7',
     price: '$139.990',
     tag: 'CYBER WEEK'
   },
   {
-    image: 'https://example.com/iphonexr.jpg',
+    image: iphonexrImage,
     title: 'iPhone XR',
     price: '$229.990',
     tag: 'CYBER WEEK'
   },
   {
-    image: 'https://example.com/ps4.jpg',
+    image: ps4Image,
     title: 'Playstation 4 - 500GB con control',
     price: '$169.990',
     tag: 'CYBER WEEK'
   },
   {
-    image: 'https://example.com/iphonex.jpg',
+    image: iphonexImage,
     title: 'iPhone X',
     price: '$229.990',
     tag: 'CYBER WEEK'
   },
   {
-    image: 'https://example.com/iphone8.jpg',
+    image: iphone8Image,
     title: 'iPhone 8',
     price: '$159.990',
     tag: 'CYBER WEEK'
   },
   {
-    image: 'https://example.com/iphone13promax.jpg',
+    image: iphone13proMaxImage,
     title: 'iPhone 13 Pro Max',
     price: '$799.990',
     tag: 'CYBER WEEK'
   },
   {
-    image: 'https://example.com/applewatch.jpg',
+    image: appleWatchImage,
     title: 'Apple Watch Serie 6',
     price: '$249.990',
     tag: 'CYBER WEEK'
