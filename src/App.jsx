@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import ProductCard from './components/ProductCard';
 import macbookImage from './assets/macbook.jpg';
 import iphone7Image from './assets/iphone7.jpg';
