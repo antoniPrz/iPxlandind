@@ -75,7 +75,7 @@ const App = () => {
     <div className="min-h-screen bg-white dark:bg-dark-bg">
       <header className="bg-white dark:bg-dark-secondary shadow">
         <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
-          <h1 className="text-3xl font-bold text-primary-purple dark:text-dark-text mb-4 md:mb-0">iPhonextreme</h1>
+          <h1 className="text-3xl font-bold text-primary-purple dark:text-dark-text mb-4 md:mb-0">iPhoneXtreme</h1>
           <nav className="space-x-4">
             <a href="#" className="text-primary-purple dark:text-dark-text hover:text-primary-pink dark:hover:text-primary-pink">Home</a>
             <a href="#" className="text-primary-purple dark:text-dark-text hover:text-primary-pink dark:hover:text-primary-pink">Productos</a>
